@@ -80,6 +80,7 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
      <Compile Include="Assets\Resources\GradientSkybox\Assets\Test\Misc\CameraMove.cs" />
+     <Compile Include="Assets\Resources\Scripts\CombustableObstacle.cs" />
      <Compile Include="Assets\Resources\Scripts\MovingObstacle.cs" />
      <Compile Include="Assets\Resources\Scripts\OVRInputCatcher.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
