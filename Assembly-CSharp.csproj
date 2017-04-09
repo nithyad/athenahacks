@@ -236,6 +236,8 @@
      <Compile Include="Assets\Resources\Scenes\Scripts\CombustableObstacle.cs" />
      <Compile Include="Assets\Resources\Scenes\Scripts\MovingObstacle.cs" />
      <Compile Include="Assets\Resources\Scenes\Scripts\OVRInputCatcher.cs" />
+     <Compile Include="Assets\Resources\Scenes\Scripts\PickableObject.cs" />
+     <Compile Include="Assets\Resources\Scenes\Scripts\PickableObjectManager.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
