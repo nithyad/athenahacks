@@ -2,6 +2,7 @@
 namespace VRTK
 {
     using UnityEngine;
+	using UnityEngine.Events;
 
     /// <summary>
     /// The Straight Pointer Renderer emits a coloured beam from the end of the object it is attached to and simulates a laser beam.
@@ -39,6 +40,8 @@ namespace VRTK
         protected GameObject actualCursor;
 
         protected Vector3 cursorOriginalScale = Vector3.one;
+
+		public UnityEvent OnHit;
 
         /// <summary>
         /// The UpdateRenderer method is used to run an Update routine on the pointer.
@@ -166,6 +169,11 @@ namespace VRTK
                 PointerEnter(pointerCollidedWith);
 
                 destinationHit = pointerCollidedWith;
+				if (destinationHit.collider.gameObject.GetComponent<CombustableObstacle> ()) {
+					CombustableObstacle co = destinationHit.collider.gameObject.GetComponent<CombustableObstacle> ();
+					co.OnPlayerLook ();
+				}
+				//OnHit.Invoke();
                 ChangeColor(validCollisionColor);
             }
         }
