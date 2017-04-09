@@ -14,19 +14,18 @@ public class CombustableObstacle : MonoBehaviour {
 	{
 		Tween tween = null;
 
-		if (target.GetComponent<CanvasGroup> ()) {
-			float a = target.GetComponent<CanvasGroup> ().alpha;
+		if (target.GetComponentInChildren<CanvasGroup> ()) {
+			float a = target.GetComponentInChildren<CanvasGroup> ().alpha;
 			tween = DOTween.To(() => a, x => a = x, finalValue, duration).OnUpdate(() => {
-				target.GetComponent<CanvasGroup> ().alpha = a;
-			});
-		} else {
-			Color color = target.GetComponent<Renderer> ().material.color;
-			float a = target.GetComponent<Renderer>().material.color.a;
-			tween = DOTween.To(() => a, x => a = x, finalValue, duration).OnUpdate(() => {
-				color = new Color(color.r, color.g, color.b, a);
-				target.GetComponent<Renderer>().material.color = color;
+				target.GetComponentInChildren<CanvasGroup> ().alpha = a;
 			});
 		}
+			Color color = target.GetComponent<Renderer> ().material.color;
+			float a2 = target.GetComponent<Renderer>().material.color.a;
+			tween = DOTween.To(() => a2, x => a2 = x, finalValue, duration).OnUpdate(() => {
+				color = new Color(color.r, color.g, color.b, a2);
+				target.GetComponent<Renderer>().material.color = color;
+			});
 
 		return tween;
 	}
