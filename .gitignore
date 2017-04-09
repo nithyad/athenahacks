@@ -32,3 +32,8 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-Editor.csproj
+ProjectSettings/ProjectSettings.asset
+ProjectSettings/ProjectSettings.asset
