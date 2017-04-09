@@ -40,3 +40,5 @@ ProjectSettings/ProjectSettings.asset
 ProjectSettings/ProjectSettings.asset
 Assets/ClassRoom Stuff.meta
 Assets/ClassRoom Stuff.meta
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
