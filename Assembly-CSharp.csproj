@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7C54267B-EB88-F0D0-61B9-82A1572971F4}</ProjectGuid>
+    <ProjectGuid>{A250DFDB-99D0-4B2B-3D63-00AFC47C4B74}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GradientSkybox\Assets\Test\Misc\CameraMove.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRBoundary.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
@@ -80,20 +79,21 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
-     <Compile Include="Assets\Scripts\OVRInputCatcher.cs" />
-     <None Include="Assets\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SeparableBlur.shader" />
+     <Compile Include="Assets\Resources\GradientSkybox\Assets\Test\Misc\CameraMove.cs" />
+     <Compile Include="Assets\Resources\Scripts\OVRInputCatcher.cs" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SeparableBlur.shader" />
      <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
-     <None Include="Assets\GradientSkybox\Assets\Test\OpenfootageNET\Acknowledgement.txt" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Test\OpenfootageNET\Acknowledgement.txt" />
      <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
      <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\OVR\Resources\Underlay Transparent Occluder.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Skybox Shaders\Gradient Skybox.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Skybox Shaders\Horizontal Skybox.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Skybox Shaders\Horizon With Sun Skybox.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Skybox Shaders\RGBM Cubed Skybox.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Gradient Skybox.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Horizontal Skybox.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Horizon With Sun Skybox.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\RGBM Cubed Skybox.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
      <None Include="Assets\OVR\Resources\Underlay Impostor.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

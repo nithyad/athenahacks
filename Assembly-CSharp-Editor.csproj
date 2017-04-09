@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{367C9AD9-F68B-7065-54C5-6D0F6A21D00A}</ProjectGuid>
+    <ProjectGuid>{42B8145D-0D51-9E39-8A26-1EA36EDC6389}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -46,29 +46,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GradientSkybox\Assets\Skybox Shaders\Editor\GradientSkyboxInspector.cs" />
-     <Compile Include="Assets\GradientSkybox\Assets\Skybox Shaders\Editor\HorizonWithSunSkyboxInspector.cs" />
-     <Compile Include="Assets\GradientSkybox\Assets\Skybox Shaders\Editor\RgbmCubedSkyboxInspector.cs" />
      <Compile Include="Assets\OVR\Editor\OVRBuild.cs" />
      <Compile Include="Assets\OVR\Editor\OVRManifestPreprocessor.cs" />
      <Compile Include="Assets\OVR\Editor\OVRMoonlightLoader.cs" />
      <Compile Include="Assets\OVR\Editor\OVRScreenshotWizard.cs" />
-     <None Include="Assets\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SeparableBlur.shader" />
+     <Compile Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Editor\GradientSkyboxInspector.cs" />
+     <Compile Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Editor\HorizonWithSunSkyboxInspector.cs" />
+     <Compile Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Editor\RgbmCubedSkyboxInspector.cs" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SeparableBlur.shader" />
      <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
-     <None Include="Assets\GradientSkybox\Assets\Test\OpenfootageNET\Acknowledgement.txt" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Test\OpenfootageNET\Acknowledgement.txt" />
      <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
      <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\OVR\Resources\Underlay Transparent Occluder.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Skybox Shaders\Gradient Skybox.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Skybox Shaders\Horizontal Skybox.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Skybox Shaders\Horizon With Sun Skybox.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Skybox Shaders\RGBM Cubed Skybox.shader" />
-     <None Include="Assets\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Gradient Skybox.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Horizontal Skybox.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\Horizon With Sun Skybox.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Skybox Shaders\RGBM Cubed Skybox.shader" />
+     <None Include="Assets\Resources\GradientSkybox\Assets\Test\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
      <None Include="Assets\OVR\Resources\Underlay Impostor.shader" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/MLH-Admin/Documents/AthenaHacks/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/MLH-Admin/Documents/athenahacks/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -127,7 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{7C54267B-EB88-F0D0-61B9-82A1572971F4}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{A250DFDB-99D0-4B2B-3D63-00AFC47C4B74}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
