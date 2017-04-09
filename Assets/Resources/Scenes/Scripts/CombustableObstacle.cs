@@ -14,12 +14,19 @@ public class CombustableObstacle : MonoBehaviour {
 	{
 		Tween tween = null;
 
-		Color color = target.GetComponent<Renderer> ().material.color;
-		float a = target.GetComponent<Renderer>().material.color.a;
-		tween = DOTween.To(() => a, x => a = x, finalValue, duration).OnUpdate(() => {
-			color = new Color(color.r, color.g, color.b, a);
-			target.GetComponent<Renderer>().material.color = color;
-		});
+		if (target.GetComponent<CanvasGroup> ()) {
+			float a = target.GetComponent<CanvasGroup> ().alpha;
+			tween = DOTween.To(() => a, x => a = x, finalValue, duration).OnUpdate(() => {
+				target.GetComponent<CanvasGroup> ().alpha = a;
+			});
+		} else {
+			Color color = target.GetComponent<Renderer> ().material.color;
+			float a = target.GetComponent<Renderer>().material.color.a;
+			tween = DOTween.To(() => a, x => a = x, finalValue, duration).OnUpdate(() => {
+				color = new Color(color.r, color.g, color.b, a);
+				target.GetComponent<Renderer>().material.color = color;
+			});
+		}
 
 		return tween;
 	}
@@ -38,6 +45,7 @@ public class CombustableObstacle : MonoBehaviour {
 
 	public void OnPlayerLook() {
 		HideObject ();
+		Debug.Log ("canvas hit");
 	}
 	
 	// Update is called once per frame
